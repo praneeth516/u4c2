@@ -3,11 +3,38 @@
     {
       "id": 1,
       "name": "lakshmi vilas",
-      "owners name": "praneeth",
+      "ownerName": "praneeth",
       "address": "oldtown, anantapur",
-      "area code": 515001,
+      "areaCode": 515001,
+      "rent": 9000,
+      "preferredTenants": "bachelor"
+    },
+    {
+      "id": 3,
+      "name": "lakshmi vilas 3",
+      "ownerName": "praneeth",
+      "address": "oldtown, anantapur",
+      "areaCode": 515003,
       "rent": 8000,
-      "preferred tenants": "bachelor"
+      "preferredTenants": "bachelor"
+    },
+    {
+      "id": 2,
+      "name": "lakshmi vilas 2",
+      "ownerName": "praneeth",
+      "address": "oldtown, anantapur",
+      "areaCode": 515002,
+      "rent": 11000,
+      "preferredTenants": "bachelor"
+    },
+    {
+      "id": 4,
+      "name": "lakshmi vilas 1",
+      "ownerName": "praneeth",
+      "address": "oldtown, anantapur",
+      "areaCode": 515000,
+      "rent": 3000,
+      "preferredTenants": "bachelor"
     }
   ]
 }
