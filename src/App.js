@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Rentals } from "./Components/Rentals/Rentals";
+import { AddHouse } from "./Components/AddHouse/AddHouse";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [form, setform] = useState(false)
+
+    const changehandler = () => {
+        setform((prev) => !prev)
+    }
+    return (
+        <div className="App">
+            <button className="toggleForm" onClick={changehandler}>
+                {/* Show text Add House or Show Rentals based on state */}
+                {form ? "Show Rentals" : "Add House"}
+            </button>
+            {/* Show component> based on state */}
+            {form && <AddHouse />}
+            {!form && <Rentals />}
+
+        </div>
+    );
 }
 
 export default App;

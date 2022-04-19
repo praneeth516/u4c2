@@ -1,0 +1,13 @@
+{
+  "houses": [
+    {
+      "id": 1,
+      "name": "lakshmi vilas",
+      "owners name": "praneeth",
+      "address": "oldtown, anantapur",
+      "area code": 515001,
+      "rent": 8000,
+      "preferred tenants": "bachelor"
+    }
+  ]
+}
