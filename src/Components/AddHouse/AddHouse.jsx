@@ -14,7 +14,7 @@ export const AddHouse = (props) => {
     }
     else {
 
-      fetch("http://localhost:8000/houses", {
+      fetch("http://localhost:8080/houses", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
