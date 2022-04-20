@@ -4,10 +4,16 @@ import "./Rentals.css";
 export const Rentals = () => {
   const [rentals, setrentals] = useState([])
   const [rentalsort, setrentalsort] = useState([])
+  const [search, setsearch] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:8080/houses").then((res) => res.json()).then((data) => { setrentals(data); setrentalsort(data) })
   }, []);
+  
+  const changehandler = ({ target: { value } }) => {
+    setsearch(value);
+    setrentalsort(rentals.filter(house => house.address.indexOf(value) > -1))
+  }
 
   const sortById = () => {
     const data = rentals.sort(function (a, b) {
@@ -53,6 +59,8 @@ export const Rentals = () => {
         className="searchAddress"
         type="text"
         placeholder="Search Address"
+        value={search}
+        onChange={changehandler}
       />
       <table className="table" border="1">
         <thead>
