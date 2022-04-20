@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './AddHouse.css'
 
 export const AddHouse = (props) => {
 
