@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.App button {
+  background-color:#CC0000;
+  border-radius:5px;
+  margin: 20px 0;
+  padding: 3px 5px;
+  font-weight: bold;
+  color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +43,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+
 }
